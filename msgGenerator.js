@@ -1,7 +1,19 @@
 //The following are arrays in which the different random values will come from
 
-var countries = ['England', 'Italy', 'France'];
-var capitals = ['London', 'Rome', 'Paris'];
-var leaders = ['Boris Johnson', 'Sergio Mattarella', 'Emmanuel Macron'];
+const countries = ['England', 'Italy', 'France'];
+const capitals = ['London', 'Rome', 'Paris'];
+const leaders = ['Boris Johnson', 'Sergio Mattarella', 'Emmanuel Macron'];
 
-console.log("Hello");
+let randomCountry = Math.floor(Math.random() * countries.length);
+let randomCapital = Math.floor(Math.random() * capitals.length);
+let randomLeader = Math.floor(Math.random() * leaders.length);
+
+//Testing arrays print to console
+console.log(countries);
+console.log(capitals);
+console.log(leaders);
+
+//Testing random indecies from arrays
+console.log(randomCountry);
+console.log(randomCapital);
+console.log(randomLeader);
