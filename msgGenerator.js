@@ -1,19 +1,24 @@
 //The following are arrays in which the different random values will come from
-
-const countries = ['England', 'Italy', 'France'];
-const capitals = ['London', 'Rome', 'Paris'];
-const leaders = ['Boris Johnson', 'Sergio Mattarella', 'Emmanuel Macron'];
+const arrays = {
+    'countries' : ['England', 'Italy', 'France'],
+    'capitals' : ['London', 'Rome', 'Paris'],
+    'leaders' : ['Boris Johnson', 'Sergio Mattarella', 'Emmanuel Macron'],
+};
 
 //Select a random index 
-let randomCountry = Math.floor(Math.random() * countries.length);
-let randomCapital = Math.floor(Math.random() * capitals.length);
-let randomLeader = Math.floor(Math.random() * leaders.length);
+const random = {
+    'randomCountry' : Math.floor(Math.random() * arrays['countries'].length),
+    'randomCapital' : Math.floor(Math.random() * arrays['countries'].length),
+    'randomLeader' : Math.floor(Math.random() * arrays['leaders'].length)
+};
+
+//Individuals
 let country;
 let capital;
 let leader;
 
-
-switch (randomCountry) {
+//Switch statements to define each index
+switch (random['randomCountry']) {
     case 0:
         country = 'England';
         break;
@@ -24,7 +29,7 @@ switch (randomCountry) {
         country = 'France';
 };
 
-switch (randomCapital) {
+switch (random['randomCapital']) {
     case 0:
         capital = 'London';
         break;
@@ -36,7 +41,7 @@ switch (randomCapital) {
         break;
 };
 
-switch (randomLeader) {
+switch (random['randomLeader']) {
     case 0:
         leader = 'Boris Johnson';
         break;
@@ -46,17 +51,11 @@ switch (randomLeader) {
     case 2:
         leader = 'Emmanuel Macron';
         break;
-}
+};
 
-//Testing arrays print to console
-//console.log(countries);
-//console.log(capitals);
-//console.log(leaders);
+//Calling the function
+const randomMsg = () => { 
+    console.log( `${capital} is the capital city of ${country}. The head of state there is ${leader}!` )
+};
 
-//Testing random indices from arrays
-//console.log(randomCountry);
-console.log(country);
-//console.log(randomCapital);
-console.log(capital);
-//console.log(randomLeader);
-console.log(leader);
+console.log(randomMsg());
