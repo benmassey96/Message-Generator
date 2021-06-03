@@ -3,8 +3,14 @@ body {
         color: #ffffff;     
         background-color: #290883;
         text-align: center;
-        margin-top: 225px;
+        margin-top: 100px;
+        margin-left: 450px;
         font-size: 1em;
+        border: rgb(0, 0, 48);
+        border-width: thick;
+        border-style: solid;
+        width: 450px;
+        padding: 20px;
 }
 
 #covered {
@@ -33,4 +39,10 @@ button:visited {
 button:hover {
         background-color: cornflowerblue;
         color:darkblue;
+}
+
+#remember {
+        text-align: center;
+        width: 10;
+        margin-top: 50px;
 }
