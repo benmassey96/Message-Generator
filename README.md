@@ -1,5 +1,4 @@
-# msgGenerator
-Random message generator
+# Random message generator
 
 The random message generator itself uses JavaScript to select a random index from 3 different arrays, and combines them to make a string. It's all put together in the index.html file and styled with the CSS file.
 
