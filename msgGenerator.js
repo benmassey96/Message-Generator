@@ -54,8 +54,9 @@ switch (random['randomLeader']) {
 };
 
 //Calling the function
-const randomMsg = () => { 
-    console.log( `${capital} is the capital city of ${country}. The head of state there is ${leader}!` )
+function randomMsg() { 
+    return `${capital} is the capital city of ${country}. The head of state there is ${leader}!`
 };
 
 console.log(randomMsg());
+//randomMsg();

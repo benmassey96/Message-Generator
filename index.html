@@ -16,14 +16,17 @@
 
     <h1 id="who">Who's the head of state, again?</h1>
 
-    <h2 id="covered">We've got you covered... we hope</h2>
+    <h2 id="covered">We've got you covered... we hope! &#128556</h2><br><br>
 
-    <div>
-        <p id="script"></p>
-    </div>
+    
+    <button id="button" onclick="genTheMsg()">Get the facts &#128175</button><br><br>
 
+    <p id="script"></p>
+    
     <script>
+        function genTheMsg() {
         document.getElementById("script").innerHTML = randomMsg();
+        };
     </script>
 </body>
 </html>
